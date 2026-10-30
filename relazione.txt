@@ -1,0 +1,2 @@
+Cerca anche il motivo per il quale non va bene farla bwt con una string acon più parole, 
+fai entrambi i codici in python
