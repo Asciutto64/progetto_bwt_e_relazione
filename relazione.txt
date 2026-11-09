@@ -1,2 +1,6 @@
 Cerca anche il motivo per il quale non va bene farla bwt con una string acon più parole, 
 fai entrambi i codici in python
+
+
+Controllare perche mi chiede due volte la stringa da inserir fare gli eventuali controlli per una singola parola e migliorare il codice ed ottimizzarlo su client.py e comprenderlo
+idem su server.py e sistemare il main.py e migliorarlo 
