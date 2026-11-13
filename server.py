@@ -4,7 +4,7 @@ from main import  burrows_wheeler_transform
 
 def run_server():
     HOST = '127.0.0.1'
-    PORT = 65432
+    PORT = 32000
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_sock:
         server_sock.bind((HOST, PORT))
