@@ -19,8 +19,16 @@ def apri_server(host, porta):
     print("server avviato. Attesa risposta client: ")
     return server
 
+#funzione cHe riceve la parola inviata dal client
+def ricevi_parola(connesione):
+    #leggo i dati in byte e li trasformo in testo normale
+    dati = connesione.recv(1024)
+    parola = dati.decode("utf-8")
+    return parola 
+
 #funzione che riceve la parola dal client
 def invia_risultato(connessione, risultato):
     #trasforma il testo in byte e lo invia
     connessione.sendall(risultato.endcode("utf-8"))
+
 
