@@ -10,3 +10,8 @@ def collegamento_server(host,porta):
     #collegamento con il server
     client.connect((host,porta))
     return client
+
+def invia_parola(client, parola):
+    #converto la parola in byte e la invio
+    client.sendall(parola.endcode("utf-8"))
+    
