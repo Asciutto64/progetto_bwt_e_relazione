@@ -46,5 +46,11 @@ def rotazioni_bwt(lista_caratteri):
         rotazioni.append(rotazione)
 
     return rotazioni 
+
+#funzione che si occupa di ordinare le rotazioni alfabeticamente
+def ordina_rotazioni(rotazioni):
+    rotazioni_ordinate = sorted(rotazioni)
+    return rotazioni_ordinate
+
         
         
