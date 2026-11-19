@@ -52,5 +52,11 @@ def ordina_rotazioni(rotazioni):
     rotazioni_ordinate = sorted(rotazioni)
     return rotazioni_ordinate
 
-        
-        
+    #funzione che prende l'ultima lettere di ogni rotazione e la salva
+def estrai_ultima_colonna(rotazioni_ordinate):
+    ultima_colonna = ""
+    #ciclo che scorre per prendere l'ultimo carattere di ogni rotazione
+    for riga in rotazioni_ordinate:
+        ultima_colonna += riga[-1]
+
+        return ultima_colonna
