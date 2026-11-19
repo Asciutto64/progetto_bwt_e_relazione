@@ -65,7 +65,7 @@ def estrai_ultima_colonna(rotazioni_ordinate):
 def calcola_bwt(parola):
     lista = aggiungi_dollaro(parola)
     rotazioni =rotazioni_bwt(lista)
-    ordinate = ordina_rotazioni(rotazione)
+    ordinate = ordina_rotazioni(rotazioni)
     risultato = estrai_ultima_colonna(ordinate)
     return risultato
 
