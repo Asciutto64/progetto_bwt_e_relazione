@@ -31,4 +31,22 @@ def invia_risultato(connessione, risultato):
     #trasforma il testo in byte e lo invia
     connessione.sendall(risultato.endcode("utf-8"))
 
+#funzione principale del server
+def main():
+    server = apri_server(HOST,PORT)
 
+    #si aspetta che un client accetti e si colleghi
+    connesione, indirizzo_client = server.accept()
+    print(f"client collegato da: {indirizzo_client}")
+
+    parola = ricevi_parola(connesione)
+    print(f"Parola ricevuta: {parola}")
+
+    risultato_bwt = calcola_bwt(parola)
+    print(f"BWT calcolata: {risultato_bwt}")
+
+    invia_risultato(connesione,risultato_bwt)
+
+    #chiudo la connnesione ed il server
+    connesione.close()
+    server.close()
