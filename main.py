@@ -33,7 +33,7 @@ def aggiungi_dollaro(parola):
     # Ritorna la lista di caratteri
     return lista_caratteri
 
-def calcola_bwt(lista_caratteri):
+def rotazioni_bwt(lista_caratteri):
     #trasformo la stringa di caratteri ìin una stringa normale
     testo="".join(lista_caratteri)
     lunghezza = len(testo)
@@ -45,5 +45,6 @@ def calcola_bwt(lista_caratteri):
         rotazione = testo[i:] + [:i]
         rotazioni.append(rotazione)
 
+    return rotazioni 
         
         
