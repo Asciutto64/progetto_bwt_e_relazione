@@ -60,3 +60,13 @@ def estrai_ultima_colonna(rotazioni_ordinate):
         ultima_colonna += riga[-1]
 
         return ultima_colonna
+
+# prende tutte le funzioni e le mette tutta in una unica
+def calcola_bwt(parola):
+    lista = aggiungi_dollaro(parola)
+    rotazioni =rotazioni_bwt(lista)
+    ordinate = ordina_rotazioni(rotazione)
+    risultato = estrai_ultima_colonna(ordinate)
+    return risultato
+
+    
