@@ -50,3 +50,6 @@ def main():
     #chiudo la connnesione ed il server
     connesione.close()
     server.close()
+
+if __name__ == "__main__":
+    main()
