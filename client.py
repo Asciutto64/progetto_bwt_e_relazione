@@ -21,3 +21,16 @@ def ricevi_risposta(client):
     dati = client.recv(1024)
     risposta = dati.decode("utf-8")
     return risposta
+
+# Funzione principale del client che riceve la parola da inviare
+def main(parola):
+    # Mi collego al server, invio la parola e leggo la risposta
+    client = collegamento_server(HOST, PORT)
+    invia_parola(client, parola)
+    risposta = ricevi_risposta(client)
+
+    print(f"Risultato BWT ricevuto dal server: {risposta}")
+
+    # Chiudo il collegamento
+    client.close()
+
