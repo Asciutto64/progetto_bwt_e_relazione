@@ -42,7 +42,7 @@ def rotazioni_bwt(lista_caratteri):
 
     rotazioni = []
     for i in range(lunghezza):
-        rotazione = testo[i:] + [:i]
+        rotazione = testo[i:] + testo[:i]
         rotazioni.append(rotazione)
 
     return rotazioni 
