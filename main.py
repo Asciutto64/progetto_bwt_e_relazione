@@ -37,6 +37,7 @@ def estrai_ultima_colonna(rotazioni_ordinate):
     #ciclo che scorre per prendere l'ultimo carattere di ogni rotazione
     for riga in rotazioni_ordinate:
         ultima_colonna += riga[-1]
+    
 
     return ultima_colonna
 
@@ -67,4 +68,7 @@ if __name__ == "__main__":
             
         else:
             bwt_calcolo = calcola_bwt(input_utente)
-            print(f"Risultato BWT: {bwt_calcolo}")
+            print(f"Risultato BWT: ")
+            print("\n".join(bwt_calcolo))
+
+            break
