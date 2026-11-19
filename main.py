@@ -38,7 +38,7 @@ def estrai_ultima_colonna(rotazioni_ordinate):
     for riga in rotazioni_ordinate:
         ultima_colonna += riga[-1]
 
-        return ultima_colonna
+    return ultima_colonna
 
 # prende tutte le funzioni e le mette tutta in una unica
 def calcola_bwt(parola):
