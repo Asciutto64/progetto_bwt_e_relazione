@@ -69,4 +69,7 @@ def calcola_bwt(parola):
     risultato = estrai_ultima_colonna(ordinate)
     return risultato
 
-    
+if __name__ == "__main__":
+    parola_utente = input()
+    bwt_calcolo = calcola_bwt(parola_utente)
+    print(f"Risultato BWT: {bwt_calcolo}")
