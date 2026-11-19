@@ -34,3 +34,7 @@ def main(parola):
     # Chiudo il collegamento
     client.close()
 
+if __name__ == "__main__":
+    # prendo la parola e la passo a main
+    parola_da_inviare = input("inserisci parola da inviare al server: ").strip()
+    main(parola_da_inviare)
