@@ -70,6 +70,6 @@ def calcola_bwt(parola):
     return risultato
 
 if __name__ == "__main__":
-    parola_utente = input()
+    parola_utente = input("inserisci la parola: ")
     bwt_calcolo = calcola_bwt(parola_utente)
     print(f"Risultato BWT: {bwt_calcolo}")
