@@ -14,4 +14,10 @@ def collegamento_server(host,porta):
 def invia_parola(client, parola):
     #converto la parola in byte e la invio
     client.sendall(parola.endcode("utf-8"))
-    
+
+# Funzione che riceve la risposta dal server
+def ricevi_risposta(client):
+    #risposta in byte e la ritrasformo in testo
+    dati = client.recv(1024)
+    risposta = dati.decode("utf-8")
+    return risposta
